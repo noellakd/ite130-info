@@ -1,0 +1,46 @@
+.logo { border-radius: 50%; }
+
+.logo-img {
+  max-height: 60px;
+  max-width: 100%;
+  width: auto;
+  height: 60px;
+  border-radius: 0%;
+  -o-object-fit: cover;
+  object-fit: contain;
+}
+
+/* Gör knappar fullbredd på små skärmar och inline (auto-bredd) från md uppåt */
+.btn-responsive { width: 100%; }
+@media (min-width: 768px) {
+  .btn-responsive { width: auto; margin-right: .5rem; }
+  .btn-responsive.mb-2 { margin-bottom: 0; }
+}
+
+:root {
+  --primary-background-color: #FCF4EB;  
+  --secondary-background-color: #00352D; 
+  --accent-color: #FE4800; 
+
+  --primary-text-color: #222222;      
+  --secondary-text-color: #ffffff;      
+}
+
+text.primary {
+  color: var(--primary-text-color);
+}
+text.secondary {
+  color: var(--secondary-text-color);
+}
+
+background.primary {
+background-color: var(--primary-background-color);
+}
+background.secondary {
+background-color: var(--secondary-background-color);
+}
+background.accent {
+background-color: var(--accent-color);
+}
+
+body { padding-top: 0; }
